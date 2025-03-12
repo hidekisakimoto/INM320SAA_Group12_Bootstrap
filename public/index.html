@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Sidebar Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column">
+        <h4 class="text-light"><i><svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#3751FF"/>
+            <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
+            <defs>
+            <linearGradient id="paint0_linear_584_285" x1="11" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.7"/>
+            <stop offset="1" stop-color="white"/>
+            </linearGradient>
+            </defs>
+            </svg>
+            </i>Dashboard Kit</h4>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-pie-chart-fill me-2"></i> Overview</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-ticket-detailed-fill me-2"></i> Tickets</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-lightbulb-fill me-2"></i> Ideas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-people-fill me-2"></i> Contacts</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-person-fill me-2"></i> Agents</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-book-fill me-2"></i> Articles</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-gear-fill me-2"></i> Settings</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-award-fill me-2"></i> Subscription</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>Overview</h2>
+            <div>
+                <i class="bi bi-bell me-3"></i>
+                <span>Jones Ferdinand</span>
+                <img src="https://via.placeholder.com/40" class="rounded-circle ms-2" alt="Profile">
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="row g-3">
+            <div class="col-md-3"><div class="card-box"><h6>Unresolved</h6><h2>60</h2></div></div>
+            <div class="col-md-3"><div class="card-box"><h6>Overdue</h6><h2>16</h2></div></div>
+            <div class="col-md-3"><div class="card-box"><h6>Open</h6><h2>43</h2></div></div>
+            <div class="col-md-3"><div class="card-box"><h6>On hold</h6><h2>64</h2></div></div>
+        </div>
+
+        <!-- Graph -->
+        <div class="chart-container my-4">
+            <h5>Today's Trends</h5>
+            <canvas id="myChart"></canvas>
+        </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>
